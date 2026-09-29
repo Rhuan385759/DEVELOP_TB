@@ -1,9 +1,273 @@
 <!DOCTYPE html>
-<header>
-</header>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kung Fu Panda</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #1b1b1b;
+            color: white;
+        }
+
+        header {
+            background: linear-gradient(135deg, #111, #b22222);
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 45px;
+            color: #ffd700;
+            text-shadow: 3px 3px 5px black;
+        }
+
+        header p {
+            margin-top: 10px;
+            font-size: 18px;
+        }
+
+        nav {
+            background-color: #111;
+            padding: 15px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #ffd700;
+            text-decoration: none;
+            margin: 0 20px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            min-height: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 40px;
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.8)),
+                        url("https://images.unsplash.com/photo-1540573133985-87b6da6d54a9?auto=format&fit=crop&w=1600&q=80");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero div {
+            max-width: 700px;
+        }
+
+        .hero h2 {
+            font-size: 38px;
+            color: #ffd700;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        section {
+            padding: 50px 10%;
+        }
+
+        section h2 {
+            color: #ffd700;
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 32px;
+        }
+
+        .sobre {
+            background-color: #292929;
+            text-align: center;
+        }
+
+        .sobre p {
+            max-width: 900px;
+            margin: auto;
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        .personagens {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background-color: #333;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 2px solid #b22222;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 20px rgba(255, 215, 0, 0.3);
+        }
+
+        .card h3 {
+            color: #ffd700;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            line-height: 1.5;
+        }
+
+        .frase {
+            background: linear-gradient(135deg, #8b0000, #400000);
+            text-align: center;
+        }
+
+        .frase p {
+            font-size: 25px;
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 25px;
+            color: #aaa;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 32px;
+            }
+
+            .hero h2 {
+                font-size: 28px;
+            }
+
+            nav a {
+                display: block;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+
 <body>
-    <center>
-    <h1> Usando projeto na Turma B - novo st.</h1>
-    <h1> Novo conteudo para manuntenção</h1>
-    </center>
+
+    <header>
+        <h1>🐼 Kung Fu Panda</h1>
+        <p>Uma aventura de coragem, amizade e kung fu!</p>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#personagens">Personagens</a>
+        <a href="#frase">Mensagem</a>
+    </nav>
+
+    <section class="hero">
+        <div>
+            <h2>O lendário Dragão Guerreiro</h2>
+            <p>
+                Conheça Po, um panda apaixonado por kung fu que descobre
+                que pode ser muito mais especial do que imaginava.
+            </p>
+        </div>
+    </section>
+
+    <section id="sobre" class="sobre">
+        <h2>Sobre Kung Fu Panda</h2>
+        <p>
+            Kung Fu Panda conta a história de Po, um panda que sonha em
+            aprender kung fu. Apesar de ser desajeitado e trabalhar na
+            loja de macarrão de sua família, ele acaba sendo escolhido
+            para cumprir uma importante missão. Com a ajuda do Mestre
+            Shifu e dos Cinco Furiosos, Po aprende sobre disciplina,
+            coragem, amizade e sobre acreditar em si mesmo.
+        </p>
+    </section>
+
+    <section id="personagens">
+        <h2>Personagens</h2>
+
+        <div class="personagens">
+
+            <div class="card">
+                <h3>🐼 Po</h3>
+                <p>
+                    O protagonista da história. Um panda divertido,
+                    determinado e apaixonado por kung fu.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🥋 Mestre Shifu</h3>
+                <p>
+                    Um mestre de kung fu responsável por treinar Po
+                    e ajudá-lo a descobrir seu verdadeiro potencial.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🐯 Tigresa</h3>
+                <p>
+                    Uma das integrantes dos Cinco Furiosos e uma grande
+                    lutadora de kung fu.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🐵 Macaco</h3>
+                <p>
+                    Um dos Cinco Furiosos, conhecido por sua agilidade
+                    e habilidade nas artes marciais.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🐍 Víbora</h3>
+                <p>
+                    Uma guerreira habilidosa, gentil e muito ágil.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>🦗 Louva-a-Deus</h3>
+                <p>
+                    Pequeno, rápido e habilidoso, é outro integrante
+                    dos Cinco Furiosos.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="frase" class="frase">
+        <h2>Uma grande lição</h2>
+        <p>
+            "Acredite em você mesmo e descubra o seu verdadeiro potencial."
+        </p>
+    </section>
+
+    <footer>
+        <p>🐼 Página temática sobre Kung Fu Panda | Projeto HTML + CSS</p>
+    </footer>
+
 </body>
+</html>
+
