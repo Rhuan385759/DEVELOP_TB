@@ -24,7 +24,7 @@ jobs:
       - name: Fazer o gitclone
         uses: actions/checkout@v4
       - name: Visualizar os arquivos
-        run: ls-l
+        run: ls -l
     
   Deploy:
     environment:
